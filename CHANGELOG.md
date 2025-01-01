@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/enter-at/iac-label/compare/v1.1.0...v1.1.1) (2025-01-01)
+
+
+### Bug Fixes
+
+* update npm plugin configuration to specify pkgRoot ([d42e88a](https://github.com/enter-at/iac-label/commit/d42e88af691f73d4c32408b292322e0d0da83790))
+
 # [1.1.0](https://github.com/enter-at/iac-label/compare/v1.0.0...v1.1.0) (2025-01-01)
 
 
