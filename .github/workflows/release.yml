@@ -1,0 +1,33 @@
+name: Release
+
+on:
+  workflow_run:
+    workflows:
+      - "Test"
+    branches:
+      - main
+    types:
+      - completed
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+jobs:
+  release:
+    name: release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+      - run: |
+          npm install --omit=optional --no-package-lock --no-color --no-description --no-fund --no-save
+
+          npm install --no-package-lock --no-color --no-description --no-fund --no-save \
+            @semantic-release/npm \
+            @semantic-release/git \
+            @semantic-release/changelog
+
+          npx semantic-release

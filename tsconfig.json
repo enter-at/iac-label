@@ -1,0 +1,16 @@
+{
+    "extends": "@tsconfig/node20/tsconfig.json",
+    "compilerOptions": {
+        "rootDir": ".",
+        "outDir": "dist",
+
+        "sourceMap": true,
+        "removeComments": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "typeRoots": ["node_modules/@types", "jest"]
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+}
