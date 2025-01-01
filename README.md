@@ -8,24 +8,20 @@ npm install @enter-at/iac-label
 
 ## Usage
 ```typescript
-import { Label } from '@enter-at/iac-label';
+import { Label, Context } from '@enter-at/iac-label';
 ```
 
 **Creating a Label**
 You can create a Label instance by providing the required properties via the `ConstructorProps` interface.
 
 ```typescript
-const context = {
+const context: Context = {
   project: 'my-project',
   environment: 'dev',
   service: 'my-service',
 };
 
-const label = new Label({
-  project: 'my-project',
-  environment: 'dev',
-  service: 'my-service',
-});
+const label = new Label(context);
 ```
 
 Alias for `new Label()`:
