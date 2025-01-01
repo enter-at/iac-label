@@ -12,7 +12,10 @@
     },
     "scripts": {
         "test": "jest --reporters jest-progress-bar-reporter --no-cache",
-        "test:ci": "npm run test -- --coverage --ci --reporters=jest-junit --maxWorkers=1"
+        "test:ci": "npm run test -- --coverage --ci --reporters=jest-junit --maxWorkers=1",
+        "build": "tsc -p tsconfig.build.json",
+        "prebuild": "rimraf ./dist",
+        "postbuild": "cp LICENSE README.md package.json dist/"
     },
     "keywords": [
         "cloud",
@@ -44,7 +47,8 @@
         "ts-jest": "29.2.5",
         "ts-node": "10.9.2",
         "jest-junit": "16.0.0",
-        "jest-progress-bar-reporter": "1.0.25"
+        "jest-progress-bar-reporter": "1.0.25",
+        "rimraf": "6.0.1"
     },
     "jest-junit": {
         "outputDirectory": "test-reports/jest",
