@@ -39,7 +39,7 @@
         "typescript": "^5.7.2"
     },
     "devDependencies": {
-        "@faker-js/faker": "9.5.1",
+        "@faker-js/faker": "9.6.0",
         "@tsconfig/node20": "20.1.4",
         "@types/node": "22.13.9",
         "@types/jest": "^29.5.14",
