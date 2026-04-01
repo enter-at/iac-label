@@ -44,7 +44,7 @@
         "@types/node": "24.12.0",
         "@types/jest": "^30.0.0",
         "jest": "^30.0.0",
-        "ts-jest": "29.4.6",
+        "ts-jest": "29.4.9",
         "ts-node": "10.9.2",
         "jest-junit": "16.0.0",
         "jest-progress-bar-reporter": "1.0.25",
