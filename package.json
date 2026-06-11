@@ -36,7 +36,7 @@
     "author": "Steffen Leistner",
     "license": "MIT",
     "peerDependencies": {
-        "typescript": "^5.7.2"
+        "typescript": "^5.7.2 || ^6.0.0"
     },
     "devDependencies": {
         "@faker-js/faker": "9.9.0",
